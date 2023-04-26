@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="editPetProfile.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 400px; background-image: url('Pink White Playful & Celebratory Drive-by Graduation Banner (2).png'); background-repeat:no-repeat; background-position: center top;">
+            <span class="mask bg-gradient-default opacity-8"></span>
+            <div class="container-fluid d-flex align-items-center">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10">
+                        <h1 class="display-2 text-white"></h1>
+                        <p class="text-white mt-0 mb-5"></p>
+                        <!-- <a href="#!" class="btn btn-info">Edit profile</a> -->
+                        <!-- <a href="#!" class="btn btn-info">Submit</a> -->
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Page content -->
+        <div class="container-fluid mt--7">
+            <div class="row">
+                <div class="col-xl-8 order-xl-1">
+                    <div class="card bg-secondary shadow">
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Your Pet's Account</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="profile-image">
+
+
+
+                                    <div class="profile-images-card">
+                                        <div class="profile-images">
+                                            <img src="images/profile.png" id="upload-img">
+                                        </div>
+                                        <div class="custom-file">
+                                            <label for="fileupload">Upload Profile</label>
+                                            <input type="file" id="fileupload">
+                                        </div>
+                                    </div>
+
+                                    <!-- <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt=""> -->
+
+                                </div>
+                                <h6 class="heading-small text-muted mb-4">Pet Info</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-username">Pet's name</label>
+                                                <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-breed">Pet's breed</label>
+                                                <input type="text" id="input-breed" class="form-control form-control-alternative" placeholder="Breed">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-age">Pet's age</label>
+                                                <input type="number" id="input-age" class="form-control form-control-alternative" placeholder="Age">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-gender">Pet's gender</label>
+                                                <select name="gender" class="form-control form-control-alternative">
+                                                    <option selected disabled required>Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <!-- Description -->
+                                <h6 class="heading-small text-muted mb-4">More About Your Pet</h6>
+                                <div class="pl-lg-4">
+                                    <div class="form-group focused">
+                                        <label></label>
+                                        <textarea rows="4" class="form-control form-control-alternative" placeholder="Medical And Health Conditions (Allergies if any)"></textarea>
+                                    </div>
+                                </div>
+                                <div class="pl-lg-4">
+                                    <div class="form-group focused">
+                                        <label></label>
+                                        <textarea rows="4" class="form-control form-control-alternative" placeholder="Daily Schedule Of Your Pet"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-10">
+
+                                        <a href="#!" class="btn btn-info">Edit profile</a>
+                                        <a href="#!" class="btn btn-info">Submit</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6 m-auto text-center">
+                <div class="copyright">
+                    <p>Copyright © 2021 <a href="#">Waggin' Tails</a> All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery-latest.min.js"></script>
+    <script>
+        $(function() {
+            $("#fileupload").change(function(event) {
+                var x = URL.createObjectURL(event.target.files[0]);
+                $("#upload-img").attr("src", x);
+                console.log(event);
+            });
+        })
+    </script>
+</body>
+
+</html>

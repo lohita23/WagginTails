@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/2-2SignupV.css">
+  <title>Register</title>
+</head>
+<body>
+
+  <div class="container">
+      <div class="blueBg">
+        <div class="box signin">
+          <h2>Already Have An Account?</h2>
+          <button class="signinBtn">Sign in</button>
+        </div>
+        <div class="box signup">
+          <h2>Don't Have An Account?</h2>
+          <button class="signupBtn">Sign up</button>
+        </div>
+      </div>
+      <div class="formBx">
+        <div class="form signinForm">
+          <form action="1vmemberArea.html">
+            <h3>Sign In</h3>
+            <input type="text" id="pwd" placeholder="Username" required name="pwd">
+            <input type="password" id="pwd" placeholder="Password" required name="pwd">
+            <a href="vmemberArea.html" target="_blank">
+              <input type="submit" value="Login">
+            </a>
+            <!-- <input type="submit" value="Login For Pet's Daycare"> -->
+            <a href="#" class="forgot">Forgot Password</a>
+          </form>
+        </div>
+
+        <div class="form signupForm">
+          <form action="1vmemberArea.html">
+            <h3>Sign Up</h3>
+            <input type="text" id="pwd" placeholder="Username" required name="pwd">
+            <input type="email" id="pwd" placeholder="Email Address" required name="pwd">
+            <input type="password" id="pwd" placeholder="Password" required name="pwd">
+            <input type="password" id="pwd" placeholder="Confirm Password" required name="pwd">
+            <input type="submit" value="Register">
+            <!-- <input type="submit" value="Register For Pet's Daycare"> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+
+      const signinBtn = document.querySelector('.signinBtn');
+      const signupBtn = document.querySelector('.signupBtn');
+      const formBx = document.querySelector('.formBx');
+      const body = document.querySelector('body');
+
+      signupBtn.onclick = function(){
+        formBx.classList.add('active')
+        body.classList.add('active')
+      }
+
+      signinBtn.onclick = function(){
+        formBx.classList.remove('active')
+        body.classList.remove('active')
+      }
+
+    </script>
+</body>
+</html>

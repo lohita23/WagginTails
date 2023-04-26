@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  </style>
+  <link rel="stylesheet" href="css/1MainPageWt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>FrontMain</title>
+</head>
+
+<body>
+  <section class="banner">
+    <div class="box content">
+      <header>
+        <img src="images/Black and Blue Lighting Bolt Edm Music Logo (1).png" alt="Waggin' Tails Logo" width="60" height="60" class="logo">
+        <ul>
+          <li><a href="2-1SignupPM.html" target="_blank">Pet's Match</a></li>
+          <li><a href="2-2SignupV.html" target="_blank">Pet's Daycare</a></li>
+        </ul>
+      </header>
+
+      <div class="contentBox">
+        <h2>WAGGIN' TAILS</h2>
+        <p> egestas vitae scelligula venenatis dolor. ultrices nec congue eget,
+          ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+          auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+          <span id="dots">...</span><span id="more">erisque enim
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+            sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+            gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta.</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+      <ul class="sci">
+
+
+        <h3>Contact Us</h3>
+
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <br>
+
+      </ul>
+      <!-- <div class="bottom">
+          <p>Copyright © 2021 <a href="#">Waggin'Tails</a> All rights reserved</p>
+      </div> -->
+    </div>
+    <div class="box images">
+      <div class="imgBx">
+        <img src="images/Copy of Brown Geometric Flower Bloom Beauty Logo.png" alt="1">
+      </div>
+      <div class="imgBx">
+        <img src="images/Copy of Black Geometric Flower Bloom Beauty Logo.png" alt="2">
+      </div>
+      <div class="imgBx">
+        <img src="images/Copy of Brown & Pink Minimalist Gardening Line Art Logo.png" alt="3">
+        <!-- <a href="#" class="btn">Volunteer Login</a> -->
+        <div class="bottom">
+            <p>Copyright © 2021 <a href="#">Waggin'Tails</a> All rights reserved</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/volunteerSignup.css">
+    <title>Volunteer 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Be A Volunteer</div>
+        <div class="profile">
+            <div class="profile-image">
+                <div class="profile-images-card">
+                    <div class="profile-images">
+                        <img src="images/card-img.jpg" id="upload-img">
+                    </div>
+                    <div class="custom-file">
+                        <label for="fileupload">Upload Profile</label>
+                        <input type="file" id="fileupload">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <form action="#">
+                <div class="volunteer-details">
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="number" placeholder="Your Age" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <select name="gender">
+                            <option selected disabled required>Select gender</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                            <option value="female">OTHER</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" pattern="^\d{4}-\d{4}-\d{4}$" required name="aadhar" placeholder="Aadhar Id(format: xxxx xxxx xxxx)">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Phone (format: xxx-xxx-xxxx)" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn"><a href="volunteerSignup2.html">NEXT</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="jquery-latest.min.js"></script>
+    <script>
+        $(function() {
+            $("#fileupload").change(function(event) {
+                var x = URL.createObjectURL(event.target.files[0]);
+                $("#upload-img").attr("src", x);
+                console.log(event);
+            });
+        })
+    </script>
+</body>
+
+</html>
